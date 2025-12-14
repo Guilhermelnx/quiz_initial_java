@@ -71,6 +71,17 @@ public class Main {
             }
         }
 
+        double porcentagem = ((double) pontuacao / quiz.length) * 100;
+        double nota = ((double) pontuacao / quiz.length) * 10;
+
+        System.out.println("---------------");
+        System.out.println("FIM DO QUIZ!");
+        System.out.println("Você acertou " + pontuacao + " de " + quiz.length +  " questões.");
         System.out.println("Fim do quiz! Você acertou " + pontuacao + " de " + quiz.length + " questões.");
+
+        System.out.printf("Sua porcentagem  de acerto foi: %.2f%%n", porcentagem);
+        System.out.printf("Sua nota (média) foi: %.1f de 10.0%n", nota);
+        System.out.println("---------------------");
+
     }
 }
